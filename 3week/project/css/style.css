@@ -1,0 +1,160 @@
+/* 공통 스타일 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    color: #212121;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+html {
+    font-size: 13px; /*1rem -> 13px*/
+}
+
+/* 공통 초기화 */
+body {
+    margin: 0;
+}
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+dl, dt, dd{
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+
+/* 상단 로고 메뉴 영역 S */
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 66px;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0 15px;
+}
+header .logo img {
+    height: 34px;
+}
+header > section i {
+    font-size: 2.2rem;
+}
+header > section.left a {
+    margin-right: 10px;
+}
+header > section.right a {
+    margin-left: 10px;
+}
+
+/* 상단 로고 메뉴 영역 E */
+
+/* 메인 메뉴 영역 */
+nav {
+    display: flex;
+    height: 44px;
+}
+nav > a {
+    flex-grow: 1;
+    width: 0;
+    text-align: center;
+    line-height: 44px;
+}
+main .main_banner img {
+    width: 100%;
+    display: block;
+}
+
+/* 메인 중간 메뉴 S */
+main .mid_menus {
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px solid #ededed;
+    border-left: 0;
+    border-right: 0;
+}
+main .mid_menus > a {
+    width: calc(100% / 3);
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-left: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    font-size: 1.076rem;
+    font-weight: 500;
+}
+main .mid_menus > a:nth-of-type(3n+1) {
+    border-left: 0;
+}
+main .mid_menus > a:nth-of-type(1),
+main .mid_menus > a:nth-of-type(2),
+main .mid_menus > a:nth-of-type(3) {
+    border-top: 0;
+}
+/* 메인 중간 메뉴 E */
+
+/* 메인 중간 배너 S */
+main .mid_banners {
+    display: flex;
+    flex-wrap: wrap;
+}
+main .mid_banners > a{
+    width: 50%;
+}
+main .mid_banners > a:nth-of-type(1) {
+    width: 100%;
+}
+main .mid_banners img {
+    width: 100%;
+    display: block;
+}
+/* 메인 중간 배너 E */
+
+/* 하단 고정 메뉴 S */
+.bottom_quicks {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    background: #fff;
+    padding: 9px 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #dfe1e5;
+}
+
+.bottom_quicks .tit {
+    font-size: 0.618rem;
+    text-align: center;
+    color: #2d2f38;
+}
+.bottom_quicks .icon {
+    height: 30px;    
+}
+.bottom_quicks .icon1 {
+    background: url("../images/pen.png")
+    no-repeat center center;
+    background-size: 26px;
+}
+.bottom_quicks .icon2 {
+    background: url("../images/comment.png")
+    no-repeat center center;
+    background-size: 38px;
+}
+.bottom_quicks .icon3 {
+    background: url("../images/truck.png")
+    no-repeat center center;
+    background-size: 38px;
+}
+.bottom_quicks .icon4 {
+    background: url("../images/person.png")
+    no-repeat center center;
+    background-size: 20px;
+}
+/* 하단 고정 메뉴 E */
