@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex27</title>
+</head>
+<body>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: pink;
+            /* transition-property: width, height; */
+            transition-property: all;
+            transition-duration: 1.5s;
+            /* transition-timing-function: linear; */
+            opacity: 0.5;
+            transition-delay: 1s;
+        }
+        .box:hover {
+            width: 200px;
+            height: 200px;
+            opacity: 1;
+            transform: rotate(180deg);
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+            transition: all 2s;
+            opacity: 0.5;
+        }
+        .box2:hover {
+            width: 200px;
+            height: 200px;
+            opacity: 1;
+        }
+    </style>
+    <div class="box"></div>
+    <div class="box2"></div>
+</body>
+</html>

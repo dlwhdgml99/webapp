@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex31</title>
+</head>
+<body>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            height: 100px;
+            border: 1px solid #000;
+        }
+        li:nth-of-type(1) {
+            background: pink;
+        }
+        li:nth-of-type(2) {
+            background: rgb(147, 225, 255);
+        }
+        li:nth-of-type(3) {
+            background: rgb(207, 152, 207);
+        }
+        .flex1 {
+            align-items: stretch;
+        }
+        .flex2 {
+            align-items: flex-start;
+        }
+        .flex3 {
+            align-items: flex-end;
+        }
+        .flex4 {
+            align-items: center;
+        }
+    </style>
+    <ul class="flex1">
+        <li>Menu1</li>
+        <li>Menu2</li>
+        <li>Menu3</li>
+    </ul>
+
+    <ul class="flex2">
+        <li>Menu1</li>
+        <li>Menu2</li>
+        <li>Menu3</li>
+    </ul>
+
+    <ul class="flex3">
+        <li>Menu1</li>
+        <li>Menu2</li>
+        <li>Menu3</li>
+    </ul>
+
+    <ul class="flex4">
+        <li>Menu1</li>
+        <li>Menu2</li>
+        <li>Menu3</li>
+    </ul>
+</body>
+</html>

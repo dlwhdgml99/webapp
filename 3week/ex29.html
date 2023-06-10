@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex29</title>
+</head>
+<body>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            width: 100px;
+        }
+        li:nth-of-type(1) {
+            background: pink;
+        }
+        li:nth-of-type(2) {
+            background: skyblue;
+        }
+        li:nth-of-type(3) {
+            background: rgb(253, 161, 161);
+        }
+
+        .flex1 {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .flex2 {
+            display: flex;
+            justify-content: center;
+        }
+        .flex3 {
+            display: flex;
+            justify-content: space-between;
+        }  
+        .flex4 {
+            display: flex;
+            justify-content: space-around;
+        }  
+        .flex5 {
+            display: flex;
+            justify-content: space-evenly;
+        }     
+    </style>
+
+    <ul class="flex1">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+    </ul>
+
+    <ul class="flex2">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+    </ul>
+
+    <h1>space-between</h1>
+    <ul class="flex3">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+    </ul>
+
+    <h1>space-around</h1>
+    <ul class="flex4">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+    </ul>
+
+    <h1>space-evenly</h1>
+    <ul class="flex5">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+    </ul>
+</body>
+</html>
