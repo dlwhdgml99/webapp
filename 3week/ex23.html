@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex23</title>
+</head>
+<body>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            float: left; /*float: right*/;
+        }
+        /*.clear {
+            clear: left;
+            display: block;
+        }
+        */
+        ul::after {
+            content: '';
+            clear: left;
+            display: block;
+        }
+    </style>
+    <ul>
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+    </ul>
+    <span class="clear"></span>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Delectus laudantium reprehenderit minus atque qui omnis nisi impedit 
+        eaque sequi soluta ducimus ex quos quia sed iste, quasi quidem deserunt aliquam!
+    </div>
+</body>
+</html>
